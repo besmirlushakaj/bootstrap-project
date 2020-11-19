@@ -17,14 +17,14 @@ header h2 {
 }
 
 .site-footer {
-    background-image: linear-gradient(#CEC8FF, white);
+    background-image: linear-gradient(#c8ffdf, rgb(28, 199, 28));
     padding: 20px 0;
 }
 
 .jumbotron {
     margin:0;
-    padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    padding: 40px;
+    background-image: linear-gradient(to right, #c8ffdf, rgb(28, 199, 28));
     color: white;
 }
 
@@ -35,7 +35,7 @@ header h2 {
 }
 
 .navbar {
-    background-color: #901CAD;
+    background-color: #282729;
 }
 
 
