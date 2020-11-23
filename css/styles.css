@@ -39,7 +39,14 @@ header h2 {
 }
 
 
-
+.bg-overlay {
+    background: url("/img/group-people-tablet-chart.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 400px;
+    padding-top: 50px;
+}
 
 
 
@@ -82,3 +89,12 @@ header h2 {
 
 }   
 */
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+.carousel-caption {
+    top: 35%;
+    bottom: auto;
+}
