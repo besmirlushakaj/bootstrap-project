@@ -48,7 +48,24 @@ header h2 {
     padding-top: 50px;
 }
 
+#wdImg {
+    background: url("../img/humming-bird.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center left;
+    height: 450px;
+    object-fit: cover;
+}
 
+.centered {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+}
 
 
 /* My borders showing different div 
