@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="img/taxAL-removebg-preview.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-pro/css/all.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Lobster", cursive;
+            /*font-family: 'Barrio', cursive;*/
+        }
+
+
+        header h2 {
+            color: #CEC8FF;
+        }
+
+        .site-footer {
+            background-image: linear-gradient(#CEC8FF, white);
+            padding: 20px 0;
+        }
+
+        .jumbotron {
+            margin: 0;
+            padding: 30px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+            color: #2256BC;
+        }
+
+        .containerShadow {
+            box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.075);
+        }
+
+        /* ===== NAVIGATION ======*/
+
+        /*.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: red !important;
+}*/
+        @media (min-width: 992px) {
+            .navbar {
+                height: 50px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar img {
+                max-width: 120px;
+                max-height: 100px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .navbar img {
+                padding-top: 15px;
+            }
+        }
+
+        .navbar {
+            border: 0;
+            border-radius: 0 !important;
+            font-size: 20px;
+            background-image: linear-gradient(to bottom, rgba(231, 76, 60, 0.8) 0, #c0392b 100%);
+        }
+
+        .navbar-nav>li>a:hover,
+        .navbar-nav>li>a:focus {
+            color: #fff;
+            background-image: linear-gradient(to top, rgba(231, 76, 60, 0.5) 0, #c0392b 100%) !important;
+        }
+
+
+
+        /* ===== CAROUSEL ======*/
+        .carousel-item.banner1 {
+            background: url("/img/banner1-bg.jpg");
+
+        }
+
+        .carousel-item.banner2 {
+            background: url("/img/banner2-bg.jpg");
+        }
+
+        .carousel-item.banner3 {
+            background: url("/img/banner3-bg.jpg");
+        }
+
+        .carousel-item {
+            height: 400px;
+            width: 100%;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            background-size: cover;
+        }
+
+        .carousel-item .caption {
+            color: white;
+            font-size: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            animation-duration: 1s;
+            animation-delay: 2s;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            filter: invert(100%);
+        }
+
+        .carousel-indicators li {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+            text-indent: 0;
+            cursor: pointer;
+            border: none;
+            border-radius: 50%;
+            background-color: #c0392b;
+            box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .carousel-indicators .active {
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+            background-color: #76da83;
+        }
+
+        /* My borders showing different div 
+.col, div[class^="col-"], label[class^="col-"] {
+    border: 1px solid red;
+    margin: 2px; 
+    
+} 
+
+.row {
+    border: 3px solid blue;
+    padding: 2px;
+    margin: 5px;
+}
+
+.container, .container-fluid {
+    border: 3px solid green;
+    padding: 2px;
+    margin: 5px;    
+}
+
+.media {
+    border: 3px solid yellow;
+    padding: 2px;
+    margin: 5px;       
+}  
+
+.card {
+    border: 3px solid purple;
+    padding: 2px;
+    margin: 5px;    
+}
+
+
+.orange-border {
+
+    border: 1px solid green;
+
+}   
+*/
+
+        /* ===== BUTTON ======*/
+        /* Button */
+        /*.btn_custom {
+            font-size: 20px;
+            font-weight: 500;
+            padding: .3em 1em;
+            line-height: 1.7em !important;
+            background-color: #2256BC;
+            background-size: cover;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            border: 2px solid white;
+            border-radius: 3px;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+            color: white;
+        }
+
+        .delicious-btn {
+            display: inline-block;
+            height: 60px;
+            color: #ffffff;
+            border: 3px solid #c0392b;
+            border-radius: 5px;
+            padding: 0 10px;
+            font-size: 16px;
+            line-height: 58px;
+            font-weight: 600;
+            background-color: #e9563d;
+        }
+
+        .delicious-btn.active,
+        .delicious-btn:hover,
+        .delicious-btn:focus {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: #40ba37;
+            border-color: #40ba37;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background-color: #108d6f;
+            border-color: #108d6f;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .btn-primary {
+            color: #fff !important;
+            background-color: #007b5e;
+            border-color: #007b5e;
+        }
+
+        /* ===== CARDS ======*/
+        section {
+            padding: 60px 0;
+        }
+
+        section .section-title {
+            text-align: center;
+            color: #007b5e;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        #team .card {
+            border: none;
+            background: #ffffff;
+        }
+
+        .card:hover {
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+        }
+
+
+        .image-flip:hover .backside,
+        .image-flip.hover .backside {
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            -o-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+            border-radius: .25rem;
+        }
+
+        .image-flip:hover .frontside,
+        .image-flip.hover .frontside {
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+
+        .mainflip {
+            -webkit-transition: 1s;
+            -webkit-transform-style: preserve-3d;
+            -ms-transition: 1s;
+            -moz-transition: 1s;
+            /*-moz-transform: perspective(1000px);*/
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transition: 1s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+        .frontside {
+            position: relative;
+            /*-webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);*/
+            z-index: 2;
+            margin-bottom: 30px;
+        }
+
+        .backside {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(192, 57, 43, 0.8) !important;
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -o-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+            -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+            -moz-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+        }
+
+        .frontside,
+        .backside {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transition: 1s;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -o-transition: 1s;
+            -ms-transition: 1s;
+            transform-style: preserve-3d;
+        }
+
+        .frontside .card,
+        .backside .card {
+            /*min-height: 312px;*/
+            min-height: 370px;
+        }
+
+        .backside .card a {
+            font-size: 18px;
+            color: #007b5e !important;
+        }
+
+        .frontside .card .card-title,
+        .backside .card .card-title {
+            /*color: #007b5e !important;*/
+            height: 45px;
+            color: #ffffff;
+            background-image: linear-gradient(to bottom, rgba(231, 76, 60, 0.8) 0, #c0392b 100%);
+        }
+
+        .frontside .card-body,
+        .backside .card-body {
+            padding: 0;
+        }
+
+        .frontside .card .cover img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            /*border-radius: 50%;*/
+        }
+
+        .card .footer {
+            border-top: 1px solid #EEEEEE;
+            color: #999999;
+            margin: 30px 0 0;
+            padding: 10px 0 0;
+            text-align: center;
+        }
+
+        .card .footer .social-links {
+            font-size: 18px;
+        }
+
+        .card .footer .social-links a {
+            margin: 0 7px;
+        }
+
+        .card .footer .btn-simple {
+            margin-top: -6px;
+        }
+
+        .tcb-carousel-reviews {
+            /*background-image: linear-gradient(to top, rgba(231, 76, 60, 0.8) 0, #c0392b 100%);*/
+            border: 2px solid linear-gradient(to top, rgba(231, 76, 60, 0.8) 0, #c0392b 100%);
+            box-shadow: 10px 3px 10px #ff066f;
+        }
+
+        .tcb-carousel-reviews .carousel-control.left,
+        .tcb-carousel-reviews .carousel-control.right {
+            background: none;
+            width: 25px;
+        }
+
+        .tcb-carousel-reviews .item {
+            padding: 30px;
+        }
+
+        .tcb-carousel-reviews .block-text {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 3px 3px #c0392b;
+            color: #626262;
+            font-size: 14px;
+            margin-top: 27px;
+            padding: 15px 18px;
+            position: relative;
+        }
+
+        .tcb-carousel-reviews .block-text a {
+            color: #7d4702;
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 21px;
+            text-decoration: none;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .tcb-carousel-reviews .block-text p {
+            color: #585858;
+            /*font-family: Georgia;
+    line-height: 20px;
+    font-family: "Univers57-Condensed", sans-serif;*/
+            color: #5d564f;
+            background: #ffffff;
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .tcb-carousel-reviews .block-text ins {
+            bottom: -44px;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+        .tcb-carousel-reviews .mark {
+            padding: 12px 0;
+            background: none;
+        }
+
+        .tcb-carousel-reviews .sprite {
+            background-image: none;
+        }
+
+        .tcb-carousel-reviews .sprite-i-triangle {
+            background-position: 0 -1298px;
+            height: 44px;
+            width: 50px;
+            position: absolute;
+
+        }
+
+        .tcb-carousel-reviews .person-text {
+            position: relative;
+            padding: 10px 0 0;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .tcb-carousel-reviews .person-text a {
+            color: #ffcc00;
+            display: block;
+            font-size: 14px;
+            margin-top: 3px;
+            text-decoration: underline;
+        }
+
+        .tcb-carousel-reviews .person-text i {
+            color: #fff;
+            font-family: Georgia;
+            font-size: 13px;
+        }
+
+        .tcb-carousel-reviews .person-text .reviewer {
+            display: inline-block;
+            max-width: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .fa-quote-left {
+            padding-right: 10px;
+        }
+
+        .fa-quote-right {
+            padding-left: 10px;
+        }
+
+        .client-review-stars .checked {
+            color: #BB8B41;
+        }/*
+    </style>
+    <title>Tax ProfessionAL</title>
+</head>
+
+<body>
+
+    <!--<header class="jumbotron jumbotron-fluid py-0">
+        <div class=" text-left">
+            <a role="button" class="btn btn-link p-0 m-0" href="mailto:info@taxAL.com">
+                <i class="fa fa-envelope-square"></i>
+                info@taxAL.com</a>
+        </div>
+    </header>-->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class=" nav-item active px-2"><a class=" nav-link" href="#"><i class="fa fa-home fa-lg"></i>
+                        Home</a>
+                </li>
+                <li class=" nav-item px-2"><a class=" nav-link" href="#"><i class="fa fa-list fa-lg"></i>
+                        Services</a></li>
+            </ul>
+        </div>
+        <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+            <a class="mx-auto" href="#">
+                <img src="/img/taxAL-removebg-preview.png" class="rounded-circle img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+            <ul class="navbar-nav mr-auto text-center">
+                <li class=" nav-item px-2"><a class=" nav-link" href="contactus.html"><i
+                            class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                <li class=" nav-item px-2"><a class=" nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>
+                        About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container containerShadow">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active banner1">
+                    <div class="container h-100 d-block">
+                        <div class="row align-items-center h-100">
+                            <div class="col-12">
+                                <div class="caption animated fadeIn">
+                                    <p class="animated fadeInLeft">Affordable Tax Services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item banner2">
+                    <div class="container h-100 d-md-block">
+                        <div class="row align-items-center h-100">
+                            <div class="col-12">
+                                <div class="caption animated fadeIn">
+                                    <p class="animated fadeInRight">Maximizing Tax Deduction </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item banner3">
+                    <div class="container h-100 d-md-block">
+                        <div class="row align-items-center h-100">
+                            <div class="col-12">
+                                <div class="caption animated fadeIn">
+                                    <p class="animated fadeInRight">Virtual tax preparation</p>
+                                    <!--<a class="animated fadeInUp btn delicious-btn" href="#">Contact us</a>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Team -->
+        <section id="team" class="pb-5">
+
+            <div class="row">
+                <!-- Federal Income Tax Filing -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card shadow">
+                                    <div class="cover">
+                                        <img class="img-fluid imgTaxRefund" src="/img/tax-image-tax-refund.jpg"
+                                            alt="card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <div class="card-title pt-2 ">
+                                            <h4>Federal Income Tax</h4>
+                                        </div>
+                                        <div class="my-0">
+                                            <h5><span class="btn btn-primary btn-sm "><i class="fa fa-check"
+                                                        aria-hidden="true"></i></span> Guaranteed maximum refund</h4>
+                                                <p class="card-text">
+                                                    We guarantee you will receive the maximum refund you are entitled.
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="card-title pt-2">
+                                            <h4>Federal Income Tax</h4>
+                                        </div>
+                                        <div class="mx-2">
+                                            <p class="card-text">When you file with the Tax ProfessionAL, you get
+                                                genuine
+                                                high-end service with the ultimate expert tax preparation and planning.
+                                            </p>
+                                            <p class="card-text">
+                                                You don’t need to be a tax expert, that’s our job.</p>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <a class="animated fadeInUp btn btn-primary" href="#">
+                                                        <span class="text-white"> Contact us</span></a>
+                                                </li>
+                                            </ul>
+                                            <!-- <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </a>
+
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                        <i class="fa fa-skype"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                        <i class="fa fa-google"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- State Tax Filing -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card shadow">
+                                    <div class="cover">
+                                        <img class="img-fluid" src="img/slide-2.jpg" alt="card image"></div>
+                                    <div class="card-body text-center">
+                                        <div class="card-title pt-2">
+                                            <h4>State Tax Filing</h4>
+                                        </div>
+                                        <div class="my-0">
+                                            <h5><span class="btn btn-primary btn-sm"><i class="fa fa-check"
+                                                        aria-hidden="true"></i></span> 100% accuracy guaranteed</h4>
+                                                <p class="card-text mb-5">
+                                                    We stand behind our always up-to-date calculations and guarantee
+                                                    100%
+                                                    accuracy.
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card shadow">
+                                    <div class="card-body text-center">
+                                        <div class="card-title pt-2">
+                                            <h4>State Tax Filing</h4>
+                                        </div>
+                                        <div class="mx-2">
+                                            <p class="card-text">If you lived or earned income in more than one state,
+                                                you
+                                                might need to file returns for multiple states.
+                                                Depending on your situation,
+                                                you may need to file part-year resident returns or nonresident returns.
+                                            </p>
+                                            <p class="card-text">
+                                                Tax ProfessionAL will determine the correct type of state tax return(s)
+                                                for
+                                                you to
+                                                prepare.</p>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <a class="animated fadeInUp btn btn-primary" href="#">
+                                                        <span class="text-white"> Contact us</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+
+
+                <!-- ./Federal Income Tax Filing -->
+                <!-- Tax ID Application (ITIN) -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card shadow">
+                                    <div class="cover">
+                                        <img class=" img-fluid" src="img/tax-preparation-1.jpg" alt="card image">
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <div class="card-title pt-2">
+                                            <h4>Tax ID Application</h4>
+                                        </div>
+                                        <div class="my-0">
+                                            <h5><span class="btn btn-primary btn-sm"><i class="fa fa-check"
+                                                        aria-hidden="true"></i></span> Free ITIN application service
+                                                </h4>
+                                                <p class="card-text mb-5">
+                                                    We offer free ITIN application or renewal service.
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="card-title pt-2">
+                                            <h4>Tax ID Application</h4>
+                                        </div>
+                                        <div class="mx-2">
+                                            <p class="card-text">An ITIN (Individual Taxpayer Identification Number,
+                                                type of
+                                                Tax ID or Taxpayer ID) will serve as your identification number for
+                                                filing
+                                                your tax returns. If you do not qualify for an SSN, you will need to
+                                                apply
+                                                for an ITIN</p>
+                                            <p class="card-text">
+                                                Your ITIN tax ID not only helps you file a tax return, it ensures you
+                                                get the refund you deserve as quickly as possible
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <a class="animated fadeInUp btn btn-primary" href="#">
+                                                        <span class="text-white"> Contact us</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+            </div>
+        </section>
+        <!-- Team -->
+        <div class="tcb-carousel-reviews">
+            <div class="container">
+                <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="block-text">
+                                            <blockquote class="blockquote text-center">
+                                                <p class="mb-1"><i class="fa fa-quote-left"></i> Everybody is a genius.
+                                                    But if you judge a fish by its ability to climb a tree, it will live
+                                                    its whole life believing that it is stupid.
+                                                    <i class="fa fa-quote-right"></i>
+                                                </p>
+                                                <footer class="blockquote-footer">Albert Einstein <cite
+                                                        title="Source Title">genius</cite></footer>
+                                                <!-- Client review stars -->
+                                                <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+                                                <p class="client-review-stars">
+                                                    <!--<i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>-->
+                                                    <i class="fa fa-star fa-md checked" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fa-md checked" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fa-md checked" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-half-o fa-md checked" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o fa-md" aria-hidden="true"></i>
+                                                </p>
+
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 hidden-xs">
+                                        <div class="block-text">
+                                            <blockquote class="blockquote text-center">
+                                                <p class="mb-1"><i class="fa fa-quote-left"></i> Everybody is a genius.
+                                                    But if you judge a fish by its ability to climb a tree, it will live
+                                                    its whole life believing that it is stupid.
+                                                    <i class="fa fa-quote-right"></i>
+                                                </p>
+                                                <footer class="blockquote-footer">Albert Einstein <cite
+                                                        title="Source Title">genius</cite></footer>
+                                                <!-- Client review stars -->
+                                                <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+                                                <p class="client-review-stars">
+                                                    <!--<i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>-->
+                                                    <i class="fa fa-star fa-md checked" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fa-md checked" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fa-md checked" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-half-o fa-md checked" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o fa-md" aria-hidden="true"></i>
+                                                </p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+                                        <div class="block-text">
+                                            <blockquote class="blockquote text-center">
+                                                <p class="mb-1"><i class="fa fa-quote-left"></i> Everybody is a genius.
+                                                    But if you judge a fish by its ability to climb a tree, it will live
+                                                    its whole life believing that it is stupid.
+                                                    <i class="fa fa-quote-right"></i>
+                                                </p>
+                                                <footer class="blockquote-footer">Albert Einstein <cite
+                                                        title="Source Title">genius</cite></footer>
+                                                <!-- Client review stars -->
+                                                <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+                                                <p class="client-review-stars">
+                                                    <!--<i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <i class="far fa-star"></i>-->
+                                                    <i class="fa fa-star fa-md checked" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fa-md checked" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fa-md checked" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-half-o fa-md checked" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o fa-md" aria-hidden="true"></i>
+                                                </p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="block-text ">
+                                            <a title="" href="#">Movie One</a>
+                                            <div class="mark">My rating: <span class="rating-input"><span data-value="0"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="1"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="2"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="3"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="4"
+                                                        class="glyphicon glyphicon-star-empty"></span><span
+                                                        data-value="5" class="glyphicon glyphicon-star-empty"></span>
+                                                </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+                                                excepturi
+                                                et aliquam quaerat nam fugit sequi minus ipsa autem laudantium.
+                                                Accusantium
+                                                officiis deserunt totam voluptate soluta veritatis expedita animi
+                                                numquam!
+                                                ...</p>
+                                            <ins class="sprite sprite-i-triangle"></ins>
+                                        </div>
+                                        <div class="person-text">
+                                            <div class="reviewer">
+                                                <img class="img-responsive "
+                                                    src="https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg"
+                                                    alt="">
+                                            </div>
+                                            <a title="" href="#">Someone Famous</a>
+                                            <i>United States</i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 hidden-xs">
+                                        <div class="block-text ">
+                                            <a title="" href="#">Movie Two</a>
+                                            <div class="mark">My rating: <span class="rating-input"><span data-value="0"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="1"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="2"
+                                                        class="glyphicon glyphicon-star-empty"></span><span
+                                                        data-value="3"
+                                                        class="glyphicon glyphicon-star-empty"></span><span
+                                                        data-value="4"
+                                                        class="glyphicon glyphicon-star-empty"></span><span
+                                                        data-value="5" class="glyphicon glyphicon-star-empty"></span>
+                                                </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odit
+                                                dicta
+                                                harum odio inventore vero, adipisicing elit quisquam adipisicing elit
+                                                esse
+                                                hic alias nisi. Blanditiis minima obcaecati vero sit eaque consectetur!
+                                                Sit,
+                                                odio incidunt.." </p>
+                                            <ins class="sprite sprite-i-triangle"></ins>
+                                        </div>
+                                        <div class="person-text">
+                                            <div class="reviewer">
+                                                <img class="img-responsive "
+                                                    src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg"
+                                                    alt="">
+                                            </div>
+                                            <a title="" href="#">Someone Famous</a>
+                                            <i>United States</i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+                                        <div class="block-text ">
+                                            <a title="" href="#">Movie Three</a>
+                                            <div class="mark">My rating: <span class="rating-input"><span data-value="0"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="1"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="2"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="3"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="4"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="5"
+                                                        class="glyphicon glyphicon-star"></span> </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+                                                voluptates, atque maiores iusto tenetur hic, dolore reprehenderit odit
+                                                neque
+                                                necessitatibus veritatis quasi rerum maxime eaque, officiis fugiat, aut
+                                                quae
+                                                commodi. </p>
+                                            <ins class="sprite sprite-i-triangle"></ins>
+                                        </div>
+                                        <div class="person-text">
+                                            <div class="reviewer">
+                                                <img class="img-responsive "
+                                                    src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg"
+                                                    alt="">
+                                            </div>
+                                            <a title="" href="#">Someone Famous</a>
+                                            <i>United States</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="block-text ">
+                                            <a title="" href="#">Movie One</a>
+                                            <div class="mark">My rating: <span class="rating-input"><span data-value="0"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="1"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="2"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="3"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="4"
+                                                        class="glyphicon glyphicon-star-empty"></span><span
+                                                        data-value="5" class="glyphicon glyphicon-star-empty"></span>
+                                                </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+                                                excepturi
+                                                et aliquam quaerat nam fugit sequi minus ipsa autem laudantium.
+                                                Accusantium
+                                                officiis deserunt totam voluptate soluta veritatis expedita animi
+                                                numquam!
+                                                ...</p>
+                                            <ins class="sprite sprite-i-triangle"></ins>
+                                        </div>
+                                        <div class="person-text">
+                                            <div class="reviewer">
+                                                <img class="img-responsive "
+                                                    src="https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg"
+                                                    alt="">
+                                            </div>
+                                            <a title="" href="#">Someone Famous</a>
+                                            <i>United States</i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 hidden-xs">
+                                        <div class="block-text ">
+                                            <a title="" href="#">Movie Two</a>
+                                            <div class="mark">My rating: <span class="rating-input"><span data-value="0"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="1"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="2"
+                                                        class="glyphicon glyphicon-star-empty"></span><span
+                                                        data-value="3"
+                                                        class="glyphicon glyphicon-star-empty"></span><span
+                                                        data-value="4"
+                                                        class="glyphicon glyphicon-star-empty"></span><span
+                                                        data-value="5" class="glyphicon glyphicon-star-empty"></span>
+                                                </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odit
+                                                dicta
+                                                harum odio inventore vero, adipisicing elit quisquam adipisicing elit
+                                                esse
+                                                hic alias nisi. Blanditiis minima obcaecati vero sit eaque consectetur!
+                                                Sit,
+                                                odio incidunt.." </p>
+                                            <ins class="sprite sprite-i-triangle"></ins>
+                                        </div>
+                                        <div class="person-text">
+                                            <div class="reviewer">
+                                                <img class="img-responsive "
+                                                    src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg"
+                                                    alt="">
+                                            </div>
+                                            <a title="" href="#">Someone Famous</a>
+                                            <i>United States</i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+                                        <div class="block-text ">
+                                            <a title="" href="#">Movie Three</a>
+                                            <div class="mark">My rating: <span class="rating-input"><span data-value="0"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="1"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="2"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="3"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="4"
+                                                        class="glyphicon glyphicon-star"></span><span data-value="5"
+                                                        class="glyphicon glyphicon-star"></span> </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+                                                voluptates, atque maiores iusto tenetur hic, dolore reprehenderit odit
+                                                neque
+                                                necessitatibus veritatis quasi rerum maxime eaque, officiis fugiat, aut
+                                                quae
+                                                commodi. </p>
+                                            <ins class="sprite sprite-i-triangle"></ins>
+                                        </div>
+                                        <div class="person-text">
+                                            <div class="reviewer">
+                                                <img class="img-responsive "
+                                                    src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg"
+                                                    alt="">
+                                            </div>
+                                            <a title="" href="#">Someone Famous</a>
+                                            <i>United States</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-reviews" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-reviews" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
+                        1-206-555-1234</a><br>
+                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i
+                            class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--<script src="https://kit.fontawesome.com/fddf5c0916.js" crossorigin="anonymous"></script>-->
+</body>
+
+</html>
