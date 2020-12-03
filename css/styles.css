@@ -2,7 +2,7 @@ body {
   font-family: "Open Sans", sans-serif;
   max-width: 100%;
   overflow-x: hidden;
-  background-color: #92c7f3; }
+  background-color: #cdceca; }
 
 h1,
 h2,
@@ -355,5 +355,21 @@ section:before {
   margin: 0auto;
   padding: 25vh 0;
   text-align: center;
+  width: 100%; }
+
+/* div embaded image */
+.divContact {
   width: 100%;
-  background-color: #a0e28f; }
+  background: grey, url("../img/contact-us-customer-support-hotline-people-connect-call-customer-support_36325-1640.jpg");
+  background-size: cover;
+  background-position: center left;
+  height: 300px;
+  object-fit: cover; }
+
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: white; }

@@ -2,7 +2,7 @@ body {
     font-family: "Open Sans", sans-serif;
     max-width: 100%;
     overflow-x: hidden;
-    background-color:rgb(146, 199, 243);
+    background-color: rgb(205, 206, 202);
 }
 
 h1,
@@ -335,6 +335,7 @@ section:before {
 .card .footer .btn-simple {
     margin-top: -6px;
 }
+
 /* Coloring indicatores
 #content-block{
     position: relative;
@@ -399,15 +400,38 @@ section:before {
     background-size: cover;
 }
 
-.normal-scroll{
-.container{
-color: #202423;
-font-size: 4vw;
-margin: 0auto;
-padding: 25vh 0;
-text-align: center;
-width: 100%;
+.normal-scroll {
+    .container {
+        color: #202423;
+        font-size: 4vw;
+        margin: 0auto;
+        padding: 25vh 0;
+        text-align: center;
+        width: 100%;
 
+
+    }
+}
+
+/* div embaded image */
+.divContact {
+    width: 100%;
+    background: grey, url('../img/contact-us-customer-support-hotline-people-connect-call-customer-support_36325-1640.jpg');
+    background-size: cover;
+    background-position: center left;
+    height: 300px;
+    object-fit: cover;
 
 }
+
+
+.centered {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+
+
 }
