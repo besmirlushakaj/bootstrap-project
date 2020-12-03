@@ -31,6 +31,10 @@ header h2 {
     color: white;
 }
 
+.breadcrumb {
+    margin-bottom: 0;
+}
+
 .row-content {
     padding: 50px 0;
     border-bottom: 1px ridge;
@@ -121,9 +125,9 @@ header h2 {
 }
 
 section {
-    padding: 25vh 10%;
+    /*padding: 25vh 10%;*/
     position: relative;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     width: 100vw;
     transform-style: inherit;
 }
@@ -307,7 +311,7 @@ section:before {
     /*color: #007b5e !important;*/
     height: 45px;
     color: #ffffff;
-    background-image: linear-gradient(to bottom, rgba(71, 60, 231, 0.8) 0, #3a2bc0 100%);
+    background-image: linear-gradient(to bottom, rgba(64, 64, 66, 0.8) 0, #4a4a4d 100%);
 }
 
 .frontside .card-body,
