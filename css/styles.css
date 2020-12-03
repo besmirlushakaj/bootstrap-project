@@ -47,7 +47,7 @@ header h2 {
   background-size: cover;
   width: 100%;
   background-position: center left;
-  height: 450px;
+  height: 400px;
   object-fit: cover; }
 
 .centered {
@@ -164,9 +164,13 @@ section:before {
   height: 450px;
   object-fit: cover; }
 
-.normal-scroll {
-  background: #fff;
-  transform: translateZ(0); }
+.normal-scroll .container {
+  color: #ccc;
+  font-size: 4vw;
+  margin: 0 auto;
+  padding: 25vh 0;
+  text-align: center;
+  width: 100%; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   #section-5:before {
@@ -319,7 +323,7 @@ section:before {
 }*/
 .parallax {
   background: url("../img/globe-on-chalkboard.jpg");
-  min-height: 500px;
+  min-height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -327,7 +331,7 @@ section:before {
 
 .parallax1 {
   background: url("../img/group-people-tablet-chart.jpg");
-  min-height: 500px;
+  min-height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -335,7 +339,7 @@ section:before {
 
 .parallax2 {
   background: url("../img/green-matrix-marketing.jpg");
-  min-height: 500px;
+  min-height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -360,16 +364,19 @@ section:before {
 /* div embaded image */
 .divContact {
   width: 100%;
-  background: grey, url("../img/contact-us-customer-support-hotline-people-connect-call-customer-support_36325-1640.jpg");
+  background: url("../img/contact-us-customer-support-hotline-people-connect-call-customer-support_36325-1640.jpg");
   background-size: cover;
   background-position: center left;
-  height: 300px;
+  height: 400px;
   object-fit: cover; }
 
 .centered {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 60px;
+  font-size: 40px;
   color: white; }
+
+.centered h1, .centered h3 {
+  text-align: center; }
