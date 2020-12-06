@@ -1,5 +1,5 @@
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     max-width: 100%;
     overflow-x: hidden;
     background-color: rgb(205, 206, 202);
@@ -442,4 +442,12 @@ section:before {
     transform: translate(-50%, -50%);
     font-size: 40px;
     color: white;
+}
+
+#loginModal {
+    .modal-header {
+        background-color: #69ad1c;
+        color: white;
+    }
+
 }
